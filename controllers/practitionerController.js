@@ -21,8 +21,7 @@ const practitionerMapFhirToApi = (fhirObject) => {
   const lstDoutores = [];
 
   fhirObject.map((doutores) => {
-    const { id, name, address, qualification } = doutores.resource
-
+    const { id, name, address, qualification } = ({...doutores.resource})
     apiReturn.id = id;
     // Tive que fazer assim porque a propriedade estava sendo desestruturada como um objeto e não como um array.
     //Pesquisar depois sobre como desestruturar um array.
@@ -30,11 +29,27 @@ const practitionerMapFhirToApi = (fhirObject) => {
     apiReturn.endereco.cidade = address[0].city;
     apiReturn.endereco.estado = address[0].state;
     apiReturn.descricao.qualificacoes = qualification[0].code.coding[0].code;
-    apiReturn.descricao.texto = qualification[0].code.text;
+    // const {code} = qualification[0];
+    // const {text} = {...code}
+
+    apiReturn.descricao.texto = (qualification[0].code.text);
+    // console.log(text)
+    // apiReturn.descricao.texto = qualification[0].code.text;
 
     // Criei um novo objeto obj e copiei as propriedades de apiReturn para ele
+    console.log('// api return')
+    console.log(apiReturn)
+
     const x = {...apiReturn}
+
+    console.log('// O que está sendo inserido x')
+    console.log(x)
+
+    // Pós inserção 
     lstDoutores.push(x);
+    console.log('Pós inserção item a item')
+    console.log(lstDoutores)
+
   });
 
   console.log("Cheguei no mapeamento FhirToApi e peguei");
