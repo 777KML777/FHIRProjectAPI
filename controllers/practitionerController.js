@@ -17,11 +17,13 @@ const apiReturn = {
 }
 
 const practitionerMapFhirToApi = (fhirObject) => {
-
+  console.clear();
+  console.log('AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA')
   const lstDoutores = [];
+  let count = 0; 
 
   fhirObject.map((doutores) => {
-    const { id, name, address, qualification } = ({...doutores.resource})
+    const { id, name, address, qualification } = doutores.resource
     apiReturn.id = id;
     // Tive que fazer assim porque a propriedade estava sendo desestruturada como um objeto e não como um array.
     //Pesquisar depois sobre como desestruturar um array.
@@ -32,7 +34,7 @@ const practitionerMapFhirToApi = (fhirObject) => {
     // const {code} = qualification[0];
     // const {text} = {...code}
 
-    apiReturn.descricao.texto = (qualification[0].code.text);
+    apiReturn.descricao = (qualification[0]);
     // console.log(text)
     // apiReturn.descricao.texto = qualification[0].code.text;
 
@@ -49,6 +51,13 @@ const practitionerMapFhirToApi = (fhirObject) => {
     lstDoutores.push(x);
     console.log('Pós inserção item a item')
     console.log(lstDoutores)
+
+    count ++;
+
+    console.log(apiReturn.length)
+    console.log(x.length)
+    console.log(lstDoutores.length)
+    console.log(count)
 
   });
 
