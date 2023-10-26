@@ -5,8 +5,8 @@ Receitas = [
         "codigo" : '613146806',
         "doutor" : 'Kleber',
         "area" : 'Hormônio',
-        "dataDeEmissao" : '22.08.2023',
-        "dataDeValidade" : '22.08.2023',
+        "dataDeEmissao" : '10.06.2023',
+        "dataDeValidade" : '10.08.2023',
     },
     {
         "id": 2,
@@ -14,8 +14,8 @@ Receitas = [
         "codigo" : '668595158',
         "doutor" : 'Jucelino',
         "area" : 'Calvície',
-        "dataDeEmissao" : '22.08.2023',
-        "dataDeValidade" : '22.08.2023',
+        "dataDeEmissao" : '12.08.2023',
+        "dataDeValidade" : '12.10.2023',
     },
 
     {
@@ -24,8 +24,8 @@ Receitas = [
         "codigo" : '429658510',
         "doutor" : 'João',
         "area" : 'Psiquiatria',
-        "dataDeEmissao" : '22.08.2023',
-        "dataDeValidade" : '22.08.2023',
+        "dataDeEmissao" : '20.10.2023',
+        "dataDeValidade" : '20.12.2023',
     },
 
     {
@@ -34,8 +34,8 @@ Receitas = [
         "codigo" : '576263209',
         "doutor" : 'Leonardo',
         "area" : 'Hormônio',
-        "dataDeEmissao" : '22.08.2023',
-        "dataDeValidade" : '22.08.2023',
+        "dataDeEmissao" : '15.02.2023',
+        "dataDeValidade" : '15.04.2023',
     },
 
     {
@@ -44,8 +44,8 @@ Receitas = [
         "codigo" : '620153052',
         "doutor" : 'Danilo',
         "area" : 'Diabetes',
-        "dataDeEmissao" : '22.08.2023',
-        "dataDeValidade" : '22.08.2023',
+        "dataDeEmissao" : '13.10.2022',
+        "dataDeValidade" : '13.12.2022',
     },
 
     {
@@ -63,8 +63,8 @@ Receitas = [
         "codigo" : '364116093',
         "doutor" : 'Alyny',
         "area" : 'Analgésicos',
-        "dataDeEmissao" : '22.08.2023',
-        "dataDeValidade" : '22.08.2023',
+        "dataDeEmissao" : '02.01.2023',
+        "dataDeValidade" : '20.05.2023',
     },
 
     {
@@ -73,8 +73,8 @@ Receitas = [
         "codigo" : '479494253',
         "doutor" : 'Lucas',
         "area" : 'Analgésicos',
-        "dataDeEmissao" : '22.08.2023',
-        "dataDeValidade" : '22.08.2023',
+        "dataDeEmissao" : '22.12.2022',
+        "dataDeValidade" : '22.02.2023',
     },
     {
         "id": 9,
@@ -82,8 +82,8 @@ Receitas = [
         "codigo" : '253447430',
         "doutor" : 'Wesley',
         "area" : 'Analgésicos',
-        "dataDeEmissao" : '22.08.2023',
-        "dataDeValidade" : '22.08.2023',
+        "dataDeEmissao" : '02.03.2023',
+        "dataDeValidade" : '25.05.2023',
     },
 
     {
@@ -92,8 +92,8 @@ Receitas = [
         "codigo" : '270858173',
         "doutor" : 'Josias',
         "area" : 'Analgésicos',
-        "dataDeEmissao" : '22.08.2023',
-        "dataDeValidade" : '22.08.2023',
+        "dataDeEmissao" : '22.10.2023',
+        "dataDeValidade" : '09.11.2023',
     }
 ]
 
